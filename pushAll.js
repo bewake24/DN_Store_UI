@@ -17,7 +17,7 @@ rl.question("Enter commit message: ", (message) => {
     console.log(`\nCommitting with message: "${message}"`);
     execSync(`git commit -m "${message}"`, { stdio: "inherit" });
 
-    console.log("\nCommit complete!");
+    console.log("\nCommit complete!\n\n\n");
   } catch (err) {
     console.error("\nAn error occurred:", err.message);
   }
